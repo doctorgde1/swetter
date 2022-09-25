@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/new-post.css">
+    <script src="https://kit.fontawesome.com/59cb385119.js" crossorigin="anonymous"></script>
+    <title>New post</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="swetter__menu menu">
+            <div class="menu__main menu-item">
+                <img src="imgs/primary/logo.jpg" alt="" srcset="">
+            </div>
+            <a href="user-page.html" class="menu__user menu-item"><i class="fa-regular fa-user"></i>
+            </a>
+            <a href="new-post.html" class="menu__new menu-item current"><i class="fa-solid fa-plus"></i>
+            </a>
+            <a href="feed.html" class="menu__feed menu-item"><i class="fa-regular fa-image"></i>
+            </a>
+            <a href="authorization.html" class="menu__login menu-item"><i
+                    class="fa-solid fa-arrow-right-to-bracket"></i>
+            </a>
+        </div>
+        <div class="new-post">
+            <form action="php/new-post.php" method="post" enctype="multipart/form-data" class="new-post__constructor constructor">
+                <div class="constructor__menu menu">
+                    <div class="constructor__previous menu-item">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="constructor__next menu-item">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="constructor__submit menu-item">
+                        <input type="submit" value="upload" name="upload">
+                        <i class="fa-solid fa-upload"></i>
+                    </div>
+                </div>
+                <div class="constructor__gallery gallery constructor-block">
+                    <input class="gallery__input" multiple type="file" name="imgs[]" id="">
+                    <div class="input-hover">Select images ...</div>
+                    <div class="gallery__preview preview-item1"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item2"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item3"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item4"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item5"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item6"><i class="fa-solid fa-plus"></i></div>
+                    <div class="gallery__preview preview-item7"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="constructor__text text constructor-block">
+                    <textarea placeholder="Write description ..." name="description" id="" maxlength="2000"></textarea>
+                    <div class="text__max-chars">
+                        0 / 2000
+                    </div>
+                </div>
+            </form>
+            <div class="new-post__state">
+                <p>Make post</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/menu.js"></script>
+<script src="js/new-post.js"></script>
+</html>

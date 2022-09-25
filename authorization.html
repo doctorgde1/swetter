@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/59cb385119.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/authorization.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Authorization</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="swetter__menu menu">
+            <div class="menu__main menu-item">
+                <img src="imgs/primary/logo.jpg" alt="" srcset="">
+            </div>
+            <a href="user-page.html" class="menu__user menu-item"><i class="fa-regular fa-user"></i>
+            </a>
+            <a href="new-post.html" class="menu__new menu-item"><i class="fa-solid fa-plus"></i>
+            </a>
+            <a href="feed.html" class="menu__feed menu-item"><i class="fa-regular fa-image"></i>
+            </a>
+            <a href="authorization.php" class="menu__login menu-item current"><i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </a>
+        </div>
+        <div class="authorize">
+            <div class="authorize__switch">
+                <a href="#" class="authorize__regist active"><span>Registration</span></a>
+                <a href="#" class="authorize__login"><span>Login</span></a>
+            </div>
+            <form class="registr" action="php/authorization.php" method="post">
+                <div class="registr__username input">
+                    <p>Username *</p>
+                    <input type="text" name="usernameRegst">
+                    <div class="registr-input__error"></div>
+                </div>
+                <div class="registr__email input">
+                    <p>Email *</p>
+                    <input type="email" name="emailRegst" id="">
+                    <div class="registr-input__error"></div>
+                </div>
+                <div class="registr__password input">
+                    <p>Password *</p>
+                    <input type="password" name="passwordRegst" id="">
+                    <div class="login-input__error"></div>
+                </div>
+                <div class="registr__submit input submit">
+                    <input type="submit" name="submitRegst" value="submit">
+                </div>
+            </form>
+            <form class="login" action="php/authorization.php" method="post">
+                <div class="login__username input">
+                    <p>Username *</p>
+                    <input type="text" name="usernameLogin">
+                    <div class="login-input__error"></div>
+                </div>
+                <div class="login__password input">
+                    <p>Password *</p>
+                    <input type="password" name="passwordLogin" id="">
+                    <div class="login-input__error"></div>
+                </div>
+                <div class="login__submit input submit">
+                    <input type="submit" name="submitLogin" value="submit">
+                </div>
+            </form>
+            <div class="authorize__state">
+                Enter information
+            </div>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/authorization.js"></script>
+</body>
+
+</html>
