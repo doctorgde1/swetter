@@ -10,7 +10,7 @@ class DataBase
     
     public function conect_db()
     {
-        $this->conn = new mysqli("swetter.cjnsonizcnw8.us-east-1.rds.amazonaws.com", "admin", "swetteradmin", "swetter");
+        $this->conn = new mysqli("", "admin", "", "");
         if ($this->conn->connect_error) {
             die("Conection failed" . $this->conn->connect_error);
         }
